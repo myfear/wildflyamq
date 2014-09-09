@@ -22,9 +22,9 @@ import javax.jms.TextMessage;
     @ActivationConfigProperty(propertyName = "destination", propertyValue = "JMSBridgeTargetQ")
     //,@ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge")
 })
-public class MDBSample implements MessageListener {
+public class MessageReceiver implements MessageListener {
 
-    static final Logger logger = Logger.getLogger(MDBSample.class.getName());
+    static final Logger logger = Logger.getLogger(MessageReceiver.class.getName());
 
     @Override
     public void onMessage(Message message) {
